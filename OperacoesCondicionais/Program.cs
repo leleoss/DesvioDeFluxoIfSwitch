@@ -15,6 +15,23 @@ namespace OperacoesCondicionais
 
              //Declaração das variáveis n1 e n2. Elas serão do tipo double
              double n1, n2;
+
+             /*
+             Para limpar a tela de comando a cada execução, utilizaremos o comando Console.Clear();
+             obs.:Clear->Limpar
+              */
+              console.Clear();
+              console.Writeline("Esolha uma das operações abaixo:");
+              /*
+              Para a exibição das opções de operação, vamos usar o comando Console.WriteLine e, nele usaremos um comando de quebra de linha \n(contra-barra m(new line)).
+              Assim, as opções ficarão abaixo da outra
+               */
+               Console.WriteLine("1-Soma\n2-Subtrair\n3-Multiplicar\n4-Dividir");
+               operacao = int.Parse(Console.ReadLine());
+               Console.WriteLine("Digite um número:");
+               n1 = double.Parse(Console.ReadLine());
+               Console.Writeline("Digite outro número");
+               n2 = double.Parse(Console.ReadLine());
         }
     }
 }
